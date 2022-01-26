@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Phonebook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/25 17:23:57 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/25 21:43:04 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/01/26 16:15:09 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ Phonebook::Phonebook()
 string	Phonebook::input_field(string msg)
 {
 	string	str;
+	
 	while (str.empty() && !cin.eof())
 	{
 		cout << msg;
