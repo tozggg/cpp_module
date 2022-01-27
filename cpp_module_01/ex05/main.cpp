@@ -1,33 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanB.hpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/27 14:26:58 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/27 15:23:49 by taejkim          ###   ########.fr       */
+/*   Created: 2022/01/27 19:53:20 by taejkim           #+#    #+#             */
+/*   Updated: 2022/01/27 21:42:22 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HUMANB_HPP
-# define HUMANB_HPP
+#include "Karen.hpp"
 
-# include "Weapon.hpp"
-# include <iostream>
-# include <string>
-
-class HumanB
+int main(void)
 {
-private:
-	string	name;
-	Weapon	*weapon;
+	Karen karen = Karen();
 
-public:
-	HumanB(string name);
+	cout << "[DEBUG]" << endl; 
+	karen.complain("DEBUG");
+	cout << endl;
 
-	void	setWeapon(Weapon &weapon);
-	void	attack(void);
-};
+	cout << "[INFO]" << endl; 
+	karen.complain("INFO");
+	cout << endl;
 
-#endif
+	cout << "[WARNING]" << endl; 
+	karen.complain("WARNING");
+	cout << endl;
+
+	cout << "[ERROR]" << endl; 
+	karen.complain("ERROR");
+	cout << endl;
+
+	return (0);
+}

@@ -1,33 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanB.hpp                                         :+:      :+:    :+:   */
+/*   Karen.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/27 14:26:58 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/27 15:23:49 by taejkim          ###   ########.fr       */
+/*   Created: 2022/01/27 19:28:29 by taejkim           #+#    #+#             */
+/*   Updated: 2022/01/27 21:44:00 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HUMANB_HPP
-# define HUMANB_HPP
+#ifndef KAREN_HPP
+# define KAREN_HPP
 
-# include "Weapon.hpp"
 # include <iostream>
 # include <string>
 
-class HumanB
+# define DEBUG 0
+# define INFO 1
+# define WARNING 2
+# define ERROR 3
+
+using std::cout;
+using std::endl;
+using std::string;
+
+class Karen
 {
 private:
-	string	name;
-	Weapon	*weapon;
+	string	str[4];
+	void	(Karen::*func[4])(void);
+
+	void	debug(void);
+	void	info(void);
+	void	warning(void);
+	void	error(void);
 
 public:
-	HumanB(string name);
-
-	void	setWeapon(Weapon &weapon);
-	void	attack(void);
+	Karen();
+	void	complain(std::string level);
 };
 
 #endif

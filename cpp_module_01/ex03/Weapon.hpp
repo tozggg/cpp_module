@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 18:02:54 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/26 18:15:20 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/01/27 14:58:25 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,10 @@ private:
 
 public:
 	Weapon();
-	Weapon(string str);
+	Weapon(string type);
 
 	const string	&getType(void);
-	void			setType(string str);
+	void			setType(string type);
 };
 
 

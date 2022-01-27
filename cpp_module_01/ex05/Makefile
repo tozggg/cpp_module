@@ -5,18 +5,18 @@
 #                                                     +:+ +:+         +:+      #
 #    By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/01/26 16:28:18 by taejkim           #+#    #+#              #
-#    Updated: 2022/01/27 15:34:17 by taejkim          ###   ########.fr        #
+#    Created: 2022/01/26 17:45:51 by taejkim           #+#    #+#              #
+#    Updated: 2022/01/27 19:53:17 by taejkim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = horde
+NAME = karen
 
 CC = clang++
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -f
 
-SRCS = Zombie.cpp ZombieHorde.cpp main.cpp
+SRCS = Karen.cpp main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
