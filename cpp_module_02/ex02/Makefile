@@ -5,18 +5,18 @@
 #                                                     +:+ +:+         +:+      #
 #    By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/01/26 16:28:18 by taejkim           #+#    #+#              #
-#    Updated: 2022/01/28 17:13:56 by taejkim          ###   ########.fr        #
+#    Created: 2022/01/28 17:07:21 by taejkim           #+#    #+#              #
+#    Updated: 2022/01/28 22:03:54 by taejkim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = brainz
+NAME = a.out
 
 CC = clang++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 RM = rm -f
 
-SRCS = Zombie.cpp newZombie.cpp randomChump.cpp main.cpp
+SRCS = Fixed.cpp main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)

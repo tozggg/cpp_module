@@ -3,17 +3,17 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+         #
+#    By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/26 17:45:51 by taejkim           #+#    #+#              #
-#    Updated: 2022/01/27 16:44:33 by taejkim          ###   ########.fr        #
+#    Updated: 2022/01/28 17:11:32 by taejkim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = replace
 
 CC = clang++
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 RM = rm -f
 
 SRCS = main.cpp

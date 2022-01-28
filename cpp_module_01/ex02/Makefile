@@ -6,14 +6,14 @@
 #    By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/26 17:45:51 by taejkim           #+#    #+#              #
-#    Updated: 2022/01/26 17:48:14 by taejkim          ###   ########.fr        #
+#    Updated: 2022/01/28 17:12:39 by taejkim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = hibrain
 
 CC = clang++
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 RM = rm -f
 
 SRCS = main.cpp

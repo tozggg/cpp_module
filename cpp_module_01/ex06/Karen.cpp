@@ -6,7 +6,7 @@
 /*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 19:43:58 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/28 16:21:18 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/01/28 16:26:41 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,4 +58,43 @@ void	Karen::complain(std::string level)
 			return ;
 		}
 	}
+}
+
+void	Karen::filter(std::string level)
+{
+	int		n_level;
+
+	n_level = -1;
+	for (int i = 0; i < 4; i++)
+	{
+		if (level == str[i])
+			n_level = i;
+	}
+
+	switch (n_level)
+	{
+		case DEBUG:
+			cout << "[ DEBUG ]" << endl;
+			complain("DEBUG");
+			cout << endl;
+
+		case INFO:
+			cout << "[ INFO ]" << endl;
+			complain("INFO");
+			cout << endl;
+
+		case WARNING:
+			cout << "[ WARNING ]" << endl;
+			complain("WARNING");
+			cout << endl;
+
+		case ERROR:
+			cout << "[ ERROR ]" << endl;
+			complain("ERROR");
+			cout << endl;
+			break ;
+
+		default:
+			cout << "[ Probably complaining about insignificant problems ]" << endl;
+	}	
 }

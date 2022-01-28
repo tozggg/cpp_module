@@ -5,32 +5,27 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/27 19:53:20 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/28 16:21:47 by taejkim          ###   ########.fr       */
+/*   Created: 2022/01/28 17:15:14 by taejkim           #+#    #+#             */
+/*   Updated: 2022/01/28 23:41:22 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Karen.hpp"
+#include "Fixed.hpp"
 
-int main(void)
-{
-	Karen karen = Karen();
+int	main( void ) {
 
-	cout << "[ DEBUG ]" << endl; 
-	karen.complain("DEBUG");
-	cout << endl;
+	Fixed a;
+	Fixed const b( Fixed( 5.05f ) * Fixed( 2 ) );
 
-	cout << "[ INFO ]" << endl; 
-	karen.complain("INFO");
-	cout << endl;
+	std::cout << a << std::endl;
+	std::cout << ++a << std::endl;
+	std::cout << a << std::endl;
+	std::cout << a++ << std::endl;
+	std::cout << a << std::endl;
 
-	cout << "[ WARNING ]" << endl; 
-	karen.complain("WARNING");
-	cout << endl;
+	std::cout << b << std::endl;
 
-	cout << "[ ERROR ]" << endl; 
-	karen.complain("ERROR");
-	cout << endl;
-
-	return (0);
+	std::cout << Fixed::max( a, b ) << std::endl;
+	
+	return 0;
 }

@@ -5,32 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/27 19:53:20 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/28 16:21:47 by taejkim          ###   ########.fr       */
+/*   Created: 2022/01/28 17:15:14 by taejkim           #+#    #+#             */
+/*   Updated: 2022/01/28 19:28:44 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Karen.hpp"
+#include "Fixed.hpp"
 
-int main(void)
-{
-	Karen karen = Karen();
+int		main( void ) {
 
-	cout << "[ DEBUG ]" << endl; 
-	karen.complain("DEBUG");
-	cout << endl;
+	Fixed a;
+	Fixed b( a );
+	Fixed c;
+	
+	c = b;
 
-	cout << "[ INFO ]" << endl; 
-	karen.complain("INFO");
-	cout << endl;
-
-	cout << "[ WARNING ]" << endl; 
-	karen.complain("WARNING");
-	cout << endl;
-
-	cout << "[ ERROR ]" << endl; 
-	karen.complain("ERROR");
-	cout << endl;
-
-	return (0);
+	std::cout << a.getRawBits() << std::endl;
+	std::cout << b.getRawBits() << std::endl;
+	std::cout << c.getRawBits() << std::endl;
+	
+	return 0;
 }
