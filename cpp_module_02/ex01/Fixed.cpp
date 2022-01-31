@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 17:40:20 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/28 23:33:08 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/01/31 18:57:17 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,6 +73,6 @@ float	Fixed::toFloat(void) const
 
 std::ostream&	operator<<(std::ostream& ost, const Fixed& fix)
 {
-	ost << fixed.toFloat();
+	ost << fix.toFloat();
 	return (ost);
 }

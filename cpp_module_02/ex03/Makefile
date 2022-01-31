@@ -3,17 +3,17 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+         #
+#    By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/28 17:07:21 by taejkim           #+#    #+#              #
-#    Updated: 2022/01/29 01:21:12 by taejkim          ###   ########.fr        #
+#    Updated: 2022/01/31 18:53:28 by taejkim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = bsp
 
-CC = clang++
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CXX = clang++
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 RM = rm -f
 
 SRCS = Fixed.cpp Point.cpp bsp.cpp main.cpp
@@ -22,10 +22,10 @@ OBJS = $(SRCS:.cpp=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-		$(CC) $(CFLAGS) $^ -o $@
+		$(CXX) $(CXXFLAGS) $^ -o $@
 
 %.o: %.cpp
-		$(CC) $(CFLAGS) -c $< -o $@
+		$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
 		$(RM) $(OBJS)
