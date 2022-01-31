@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Karen.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 19:28:29 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/27 21:44:00 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/01/29 16:06:53 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,10 @@
 # define WARNING 2
 # define ERROR 3
 
-using std::cout;
-using std::endl;
-using std::string;
-
 class Karen
 {
 private:
-	string	str[4];
+	std::string	str[4];
 	void	(Karen::*func[4])(void);
 
 	void	debug(void);

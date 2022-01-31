@@ -6,7 +6,7 @@
 /*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 01:27:02 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/29 03:23:30 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/01/29 15:12:40 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int		point_position(Point p, Point start, Point end)
 
 	pos = ((start.getX() - p.getX()) * (end.getY() - p.getY())) \
 			- ((start.getY() - p.getY()) * (end.getX() - p.getX()));
-	std::cout << "pos;;;;" << pos << std::endl;
+	
 	if (pos > 0)
 		return (LEFT);
 	else if (pos < 0)
@@ -27,18 +27,11 @@ int		point_position(Point p, Point start, Point end)
 		return (INNER);
 }
 
-bool	bsp(Point a, Point b, Point c, Point point)
+bool	bsp(Point const a, Point const b, Point const c, Point const point)
 {
 	int	pos_ab;
 	int	pos_bc;
 	int	pos_ca;
-
-	std::cout << "a= x;" << a.getX() << " y;" << a.getY() << std::endl;
-	std::cout << "b= x;" << b.getX() << " y;" << b.getY() << std::endl;
-	std::cout << "c= x;" << c.getX() << " y;" << c.getY() << std::endl;
-	std::cout << "p= x;" << point.getX() << " y;" << point.getY() << std::endl;
-
-
 
 	pos_ab = point_position(point, a, b);
 	pos_bc = point_position(point, b, c);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   HumanA.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 14:20:57 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/27 15:37:39 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/01/29 15:50:22 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@
 class HumanA
 {
 private:
-	string	name;
+	std::string	name;
 	Weapon	&weapon;
 
 public:
-	HumanA(string name, Weapon &weapon);
+	HumanA(std::string name, Weapon &weapon);
 
 	void	attack(void);
 };

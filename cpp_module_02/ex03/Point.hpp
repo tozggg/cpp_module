@@ -6,7 +6,7 @@
 /*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 01:21:15 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/29 03:21:10 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/01/29 14:58:41 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ public:
 
 	Point&	operator=(const Point& other);
 
-	Fixed getX(void);
-	Fixed getY(void);
+	const Fixed getX(void);
+	const Fixed getY(void);
 };
 
 bool	bsp(Point const a, Point const b, Point const c, Point const point);

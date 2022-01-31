@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 18:06:24 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/27 15:00:07 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/01/29 15:50:57 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,17 @@
 Weapon::Weapon()
 {}
 
-Weapon::Weapon(string type)
+Weapon::Weapon(std::string type)
 {
 	this->type = type;
 }
 
-const string	&Weapon::getType(void)
+const std::string	&Weapon::getType(void)
 {
 	return (type);
 }
 
-void			Weapon::setType(string type)
+void			Weapon::setType(std::string type)
 {
 	this->type = type;
 }

@@ -6,7 +6,7 @@
 /*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 19:53:20 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/28 16:21:47 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/01/29 16:06:28 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,21 +16,21 @@ int main(void)
 {
 	Karen karen = Karen();
 
-	cout << "[ DEBUG ]" << endl; 
+	std::cout << "[ DEBUG ]" << std::endl; 
 	karen.complain("DEBUG");
-	cout << endl;
+	std::cout << std::endl;
 
-	cout << "[ INFO ]" << endl; 
+	std::cout << "[ INFO ]" << std::endl; 
 	karen.complain("INFO");
-	cout << endl;
+	std::cout << std::endl;
 
-	cout << "[ WARNING ]" << endl; 
+	std::cout << "[ WARNING ]" << std::endl; 
 	karen.complain("WARNING");
-	cout << endl;
+	std::cout << std::endl;
 
-	cout << "[ ERROR ]" << endl; 
+	std::cout << "[ ERROR ]" << std::endl; 
 	karen.complain("ERROR");
-	cout << endl;
+	std::cout << std::endl;
 
 	return (0);
 }

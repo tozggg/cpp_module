@@ -6,7 +6,7 @@
 /*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 16:27:10 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/26 17:06:24 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/01/29 15:29:26 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,18 +16,14 @@
 # include <iostream>
 # include <string>
 
-using std::cout;
-using std::endl;
-using std::string;
-
 class Zombie
 {
 private:
-	string	name;
+	std::string	name;
 	
 public:
 	Zombie();
-	Zombie(string name);
+	Zombie(std::string str);
 	~Zombie();
 
 	void	announce(void);

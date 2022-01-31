@@ -6,7 +6,7 @@
 /*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 16:34:04 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/26 16:40:25 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/01/29 15:27:24 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,17 @@ Zombie::Zombie()
 	name = "unknown";
 }
 
-Zombie::Zombie(string str)
+Zombie::Zombie(std::string str)
 {
 	name = str;
 }
 
 Zombie::~Zombie()
 {
-	cout << "<" << name << "> is died" << endl;
+	std::cout << "<" << name << "> is died" << std::endl;
 }
 
 void	Zombie::announce()
 {
-	cout << "<" << name << "> BraiiiiiiinnnzzzZ..." << endl;
+	std::cout << "<" << name << "> BraiiiiiiinnnzzzZ..." << std::endl;
 }

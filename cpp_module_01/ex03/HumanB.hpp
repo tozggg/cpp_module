@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   HumanB.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 14:26:58 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/27 15:23:49 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/01/29 15:50:16 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@
 class HumanB
 {
 private:
-	string	name;
+	std::string	name;
 	Weapon	*weapon;
 
 public:
-	HumanB(string name);
+	HumanB(std::string name);
 
 	void	setWeapon(Weapon &weapon);
 	void	attack(void);

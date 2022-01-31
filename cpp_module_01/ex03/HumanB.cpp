@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 14:08:28 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/27 15:09:13 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/01/29 15:51:13 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
 
-HumanB::HumanB(string name)
+HumanB::HumanB(std::string name)
 {
 	this->name = name;
 }
@@ -24,6 +24,6 @@ void	HumanB::setWeapon(Weapon &weapon)
 
 void	HumanB::attack(void)
 {
-	cout << name;
-	cout << "attacks with his " << weapon->getType() << endl;
+	std::cout << name;
+	std::cout << "attacks with his " << weapon->getType() << std::endl;
 }

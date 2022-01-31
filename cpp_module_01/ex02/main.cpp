@@ -6,29 +6,27 @@
 /*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 17:46:00 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/26 17:57:00 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/01/29 15:43:20 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <string>
 
-using std::cout;
-using std::endl;
-using std::string;
-
 int main(void)
 {
-	string	str = "HI THIS IS BRAIN";
+	std::string	str = "HI THIS IS BRAIN";
 
-	string	*stringPTR = &str;
-	string	&stringREF = str;
+	std::string	*stringPTR = &str;
+	std::string	&stringREF = str;
 
-	cout << "address(stringPTR) : " << stringPTR << endl;
-	cout << "address(stringREF) : " << &stringREF << endl;
-	cout << endl;
-	cout << "string(stringPTR) : " << *stringPTR << endl;
-	cout << "string(stringREF) : " << stringREF << endl;
+	std::cout << "address(string):\t" << &str << std::endl;
+	std::cout << "address(stringPTR):\t" << stringPTR << std::endl;
+	std::cout << "address(stringREF):\t" << &stringREF << std::endl;
+	std::cout << std::endl;
+	std::cout << "string(string):\t\t" << str << std::endl;
+	std::cout << "string(stringPTR):\t" << *stringPTR << std::endl;
+	std::cout << "string(stringREF):\t" << stringREF << std::endl;
 
 	return (0);
 }

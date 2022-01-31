@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 18:02:54 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/27 14:58:25 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/01/29 15:48:44 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,21 +16,17 @@
 # include <iostream>
 # include <string>
 
-using std::cout;
-using std::endl;
-using std::string;
-
 class Weapon
 {
 private:
-	string	type;
+	std::string	type;
 
 public:
 	Weapon();
-	Weapon(string type);
+	Weapon(std::string type);
 
-	const string	&getType(void);
-	void			setType(string type);
+	const std::string&	getType(void);
+	void				setType(std::string type);
 };
 
 

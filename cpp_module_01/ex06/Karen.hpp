@@ -6,7 +6,7 @@
 /*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 19:28:29 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/28 16:05:36 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/01/29 16:10:17 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,10 @@
 # define WARNING 2
 # define ERROR 3
 
-using std::cout;
-using std::endl;
-using std::string;
-
 class Karen
 {
 private:
-	string	str[4];
+	std::string	str[4];
 	void	(Karen::*func[4])(void);
 
 	void	debug(void);
