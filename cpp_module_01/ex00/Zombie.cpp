@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 16:34:04 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/29 15:27:24 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/01/31 11:33:54 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ Zombie::~Zombie()
 	std::cout << "<" << name << "> is died" << std::endl;
 }
 
-void	Zombie::announce()
+void	Zombie::announce(void)
 {
 	std::cout << "<" << name << "> BraiiiiiiinnnzzzZ..." << std::endl;
 }
