@@ -6,7 +6,7 @@
 /*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/31 15:30:45 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/31 16:18:12 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/02 16:05:44 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 FragTrap::FragTrap()
 {
-	this->name = "unknown";
+	name = "unknown";
 	hitpoints = 100;
 	energy = 100;
 	attack_damage = 30;

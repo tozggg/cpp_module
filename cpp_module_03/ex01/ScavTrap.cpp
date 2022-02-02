@@ -6,7 +6,7 @@
 /*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/31 15:30:45 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/31 15:51:35 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/02 16:05:28 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 ScavTrap::ScavTrap()
 {
-	this->name = "unknown";
+	name = "unknown";
 	hitpoints = 100;
 	energy = 50;
 	attack_damage = 20;
