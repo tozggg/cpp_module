@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 17:15:22 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/28 22:02:25 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/02 12:46:54 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,5 @@ public:
 	int		getRawBits(void) const;
 	void	setRawBits(int const raw);
 };
-
-
-
 
 #endif

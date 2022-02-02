@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 17:15:14 by taejkim           #+#    #+#             */
-/*   Updated: 2022/01/29 15:14:58 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/02 13:31:25 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	main( void ) {
 
 	Point arr[5] = {Point(8, 8), \
 					Point(4, 4), \
-					Point(1, 4), \
+					Point(4, 1), \
 					Point(1.5, 3.5), \
 					Point(3.125, 4.125)};
 
