@@ -6,17 +6,17 @@
 #    By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/28 17:07:21 by taejkim           #+#    #+#              #
-#    Updated: 2022/02/04 13:55:57 by taejkim          ###   ########.fr        #
+#    Updated: 2022/02/04 17:21:07 by taejkim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = animal
+NAME = abstract
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 RM = rm -f
 
-SRCS = Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongDog.cpp WrongCat.cpp main.cpp
+SRCS = Animal.cpp Dog.cpp Cat.cpp Brain.cpp main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
