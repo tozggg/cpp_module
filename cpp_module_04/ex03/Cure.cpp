@@ -6,13 +6,13 @@
 /*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 18:36:14 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/04 20:42:42 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/05 12:05:46 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cure.hpp"
 
-Cure::Cure() : AMateria("Cure")
+Cure::Cure() : AMateria("cure")
 {
 }
 

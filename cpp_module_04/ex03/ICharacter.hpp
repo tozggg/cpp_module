@@ -6,15 +6,16 @@
 /*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 18:19:06 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/04 20:34:41 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/05 13:05:03 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ICHARACTER_HPP
 # define ICHARACTER_HPP
 
-class AMateria;
 # include "AMateria.hpp"
+
+class AMateria;
 
 class ICharacter
 {

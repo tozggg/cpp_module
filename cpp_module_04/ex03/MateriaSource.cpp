@@ -6,7 +6,7 @@
 /*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 18:18:58 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/04 20:30:06 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/05 12:10:46 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ MateriaSource::~MateriaSource()
 		if (storage[i])
 			delete storage[i];
 	}
+	std::cout << "source is destroyed" << std::endl;
 }
 
 void		MateriaSource::learnMateria(AMateria* m)
@@ -35,7 +36,7 @@ void		MateriaSource::learnMateria(AMateria* m)
 		if (storage[i] == NULL)
 		{
 			storage[i] = m;
-			std::cout << "leanMateria [" << m->getType();
+			std::cout << "learnMateria [" << m->getType();
 			std::cout << "] in the storage[" << i << "]" << std::endl;
 			return ;
 		}

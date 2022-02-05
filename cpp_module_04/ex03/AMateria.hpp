@@ -6,7 +6,7 @@
 /*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 18:04:29 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/04 20:34:36 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/05 13:05:14 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,9 @@
 
 # include <iostream>
 # include <string>
-class ICharacter;
 # include "ICharacter.hpp"
+
+class ICharacter;
 
 class AMateria
 {

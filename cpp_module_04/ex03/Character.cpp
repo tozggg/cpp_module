@@ -6,7 +6,7 @@
 /*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 18:45:19 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/04 19:59:47 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/05 12:40:18 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,10 @@ Character::Character(const Character& other)
 	name = other.getName();
 	for (int i = 0; i < 4; i++)
 	{
-		if (inventory[i])
-		{
-			delete inventory[i];
-			inventory[i] = NULL;
-		}
 		if (other.inventory[i])
 			inventory[i] = other.inventory[i]->clone();
+		else
+			inventory[i] = NULL;
 	}
 	std::cout << "copy character created" << std::endl;
 }
