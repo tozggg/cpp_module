@@ -6,7 +6,7 @@
 /*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 02:13:04 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/06 02:33:09 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/06 02:43:48 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ Form*	Intern::makeForm(std::string name, std::string target)
 	t_forms	formsArr[3] =	{
 								{"shrubbery creation", &Intern::getSForm},
 								{"robotomy request", &Intern::getRForm},
-								{"presidential pardon", &Intern::getPForm},
+								{"presidential pardon", &Intern::getPForm}
 							};
 	
 	for (int i = 0; i < 3; i++)
