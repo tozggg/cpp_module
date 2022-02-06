@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 18:04:01 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/06 01:29:38 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/06 16:36:37 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,15 @@ int main(void)
 {
 	try
 	{
-		Bureaucrat k = Bureaucrat("kim", 137);
+		Bureaucrat k = Bureaucrat("kim", 5);
 
-		Form *s = new ShrubberyCreationForm("tree");
-		std::cout << *s << std::endl;
+		Form *p = new PresidentialPardonForm("zafod");
+		std::cout << *p << std::endl;
 		
-		s->beSigned(k);
-		s->execute(k);
+		p->beSigned(k);
+		p->execute(k);
 
-		delete s;
+		delete p;
 	}
 	catch(std::exception& e)
 	{
@@ -53,18 +53,18 @@ int main(void)
 		std::cerr << e.what() << std::endl;
 	}
 	std::cout << std::endl;
-
+	
 	try
 	{
-		Bureaucrat k = Bureaucrat("kim", 5);
+		Bureaucrat k = Bureaucrat("kim", 137);
 
-		Form *p = new PresidentialPardonForm("zafod");
-		std::cout << *p << std::endl;
+		Form *s = new ShrubberyCreationForm("tree");
+		std::cout << *s << std::endl;
 		
-		p->beSigned(k);
-		p->execute(k);
+		s->beSigned(k);
+		s->execute(k);
 
-		delete p;
+		delete s;
 	}
 	catch(std::exception& e)
 	{

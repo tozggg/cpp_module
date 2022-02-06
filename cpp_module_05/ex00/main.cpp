@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 18:04:01 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/05 18:50:23 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/06 15:56:00 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int main(void)
 
 	try
 	{
-		Bureaucrat k = Bureaucrat("kim", -1);
+		Bureaucrat k = Bureaucrat("kim", 0);
 		std::cout << k << std::endl;
 	}
 	catch(std::exception& e)
