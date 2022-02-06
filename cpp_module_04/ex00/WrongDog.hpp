@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongDog.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 23:19:45 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/01 23:37:37 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/06 12:40:03 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,10 @@ class WrongDog : public WrongAnimal
 {
 public:
 	WrongDog();
+	WrongDog(const WrongDog& other);
 	~WrongDog();
+
+	WrongDog&	operator=(const WrongDog& other);
 
 	void	makeSound(void) const;
 };

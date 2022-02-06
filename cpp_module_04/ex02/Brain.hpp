@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 14:20:07 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/04 16:55:22 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/06 12:46:07 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,10 @@ private:
 
 public:
 	Brain();
+	Brain(const Brain& other);
 	~Brain();
+
+	Brain&		operator=(const Brain& other);
 
 	std::string	*getIdea(void);
 	int			getSize(void);

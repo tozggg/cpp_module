@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 23:32:41 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/04 16:54:08 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/06 12:45:11 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,11 @@ Dog::~Dog()
 Dog&	Dog::operator=(const Dog& other)
 {
 	std::cout << "[Dog] Assignment Operator" << std::endl;
+	if (this == &other)
+		return (*this);
+
 	type = other.getType();
 	setBrainIdeas(other.getBrainIdea(), other.getBrainSize());
-
 	return (*this);
 }
 

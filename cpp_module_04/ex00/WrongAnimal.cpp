@@ -17,9 +17,25 @@ WrongAnimal::WrongAnimal()
 	std::cout << "[WrongAnimal] Default Constructor" << std::endl;
 }
 
+WrongAnimal::WrongAnimal(const WrongAnimal& other)
+{
+	std::cout << "[WrongAnimal] Copy Constructor" << std::endl;
+	type = other.getType();
+}
+
 WrongAnimal::~WrongAnimal()
 {
 	std::cout << "[WrongAnimal] Destructor" << std::endl;
+}
+
+WrongAnimal&	WrongAnimal::operator=(const WrongAnimal& other)
+{
+	std::cout << "[WrongAnimal] Assignment Operator" << std::endl;
+	if (this == &other)
+		return (*this);
+	
+	type = other.getType();
+	return (*this);
 }
 
 std::string	WrongAnimal::getType(void) const

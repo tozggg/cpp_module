@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 23:32:41 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/04 17:33:20 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/06 12:44:47 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,11 @@ Cat::~Cat()
 Cat&	Cat::operator=(const Cat& other)
 {
 	std::cout << "[Cat] Assignment Operator" << std::endl;
+	if (this == &other)
+		return (*this);
+
 	type = other.getType();
 	setBrainIdeas(other.getBrainIdea(), other.getBrainSize());
-
 	return (*this);
 }
 

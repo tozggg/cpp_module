@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cure.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 18:36:14 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/05 12:05:46 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/06 12:59:05 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,21 @@ Cure::Cure() : AMateria("cure")
 {
 }
 
+Cure::Cure(const Cure& other) : AMateria(other.getType())
+{
+}
+
 Cure::~Cure()
 {
+}
+
+Cure&	Cure::operator=(const Cure& other)
+{
+	if (this == &other)
+		return (*this);
+	
+	type = other.getType();
+	return (*this);
 }
 
 AMateria* Cure::clone() const

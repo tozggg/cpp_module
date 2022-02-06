@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Character.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 18:45:19 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/05 12:40:18 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/06 13:17:00 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ Character& Character::operator=(const Character& other)
 	std::cout << "character assignation..." << std::endl;
 	if (this == &other)
 		return (*this);
+
 	name = other.getName();
 	for (int i = 0; i < 4; i++)
 	{

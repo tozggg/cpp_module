@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   MateriaSource.hpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 19:48:28 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/04 20:00:58 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/06 13:11:53 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,10 @@ private:
 
 public:
 	MateriaSource();
+	MateriaSource(const MateriaSource& other);
 	~MateriaSource();
+
+	MateriaSource&	operator=(const MateriaSource& other);
 
 	void		learnMateria(AMateria* m);
 	AMateria*	createMateria(std::string const & type);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   AMateria.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 18:04:29 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/05 13:05:14 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/06 12:54:20 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,12 @@ protected:
     std::string	type;
 
 public:
+	AMateria();
     AMateria(std::string const & type);
-    virtual ~AMateria();
+    AMateria(const AMateria& other);
+	virtual ~AMateria();
+
+	AMateria&	operator=(const AMateria& other);
 
     std::string const & getType() const;
     virtual AMateria* clone() const = 0;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 23:17:33 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/01 23:48:53 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/06 12:33:50 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,10 @@ protected:
 
 public:
 	WrongAnimal();
+	WrongAnimal(const WrongAnimal& other);
 	~WrongAnimal();
+
+	WrongAnimal&	operator=(const WrongAnimal& other);
 
 	std::string		getType(void) const;
 	void			makeSound(void) const;
