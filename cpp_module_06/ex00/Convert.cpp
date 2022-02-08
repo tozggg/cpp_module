@@ -6,7 +6,7 @@
 /*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 16:03:38 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/07 19:27:02 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/08 00:15:26 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ Convert::Convert(): is_invalid(false), value(0.0) {};
 
 Convert::Convert(std::string input): is_invalid(false), value(0.0)
 {
-	if (input.length() == 1 && !isdigit(input[0]))
+	if (input.length() == 1 && !std::isdigit(input[0]))
 	{	
 		value = input[0];
 		return ;
@@ -25,10 +25,10 @@ Convert::Convert(std::string input): is_invalid(false), value(0.0)
 	errno = 0;
 	char	*endptr = NULL;
 	
-	value = strtod(input.c_str(), &endptr);
+	value = std::strtod(input.c_str(), &endptr);
 	if (errno == ERANGE)
 		is_invalid = true;
-	if (!isdigit(input[0]) && !(input[0] == '+' || input[0] == '-') && value == 0)
+	if (!std::isdigit(input[0]) && !(input[0] == '+' || input[0] == '-') && value == 0)
 		is_invalid = true;
 	if (!(*endptr == 0 || std::string(endptr) == "f"))
 		is_invalid = true;
@@ -49,14 +49,14 @@ void	Convert::printChar(void) const
 {
 	std::cout << "char: ";
 
-	if (isnan(value) || isinf(value) || \
+	if (std::isnan(value) || std::isinf(value) || \
 		value > std::numeric_limits<char>::max() || \
 		value < std::numeric_limits<char>::min())
 		std::cout << "impossible" << std::endl;
 	else
 	{
 		char c = static_cast<char>(value);
-		if (isprint(c))
+		if (std::isprint(c))
 			std::cout << "'" << c << "'" << std::endl;
 		else
 			std::cout << "Non displayable" << std::endl;
@@ -67,7 +67,7 @@ void	Convert::printInt(void) const
 {
 	std::cout << "int: ";
 
-	if (isnan(value) || isinf(value) || \
+	if (std::isnan(value) || std::isinf(value) || \
 		value > std::numeric_limits<int>::max() || \
 		value < std::numeric_limits<int>::min())
 		std::cout << "impossible" << std::endl;
@@ -82,7 +82,7 @@ void	Convert::printFloat(void) const
 {
 	std::cout << "float: ";
 
-	if (!(isnan(value) || isinf(value)) && \
+	if (!(std::isnan(value) || std::isinf(value)) && \
 		(value > std::numeric_limits<float>::max() || \
 		value < std::numeric_limits<float>::max() * -1))
 		std::cout << "impossible" << std::endl;
