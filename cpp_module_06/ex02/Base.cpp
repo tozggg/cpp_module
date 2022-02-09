@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Base.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 20:43:07 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/07 21:54:00 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/09 11:44:49 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ Base::~Base() {}
 
 Base*	generate(void)
 {
-	int rd = rand();
+	int rd = std::rand();
 
 	if (rd % 3 == 0)
 	{

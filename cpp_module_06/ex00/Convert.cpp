@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Convert.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taejkim <taejkim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: taejkim <taejkim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 16:03:38 by taejkim           #+#    #+#             */
-/*   Updated: 2022/02/08 00:15:26 by taejkim          ###   ########.fr       */
+/*   Updated: 2022/02/09 11:26:12 by taejkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Convert::Convert(std::string input): is_invalid(false), value(0.0)
 {
 	if (input.length() == 1 && !std::isdigit(input[0]))
 	{	
-		value = input[0];
+		value = static_cast<double>(input[0]);
 		return ;
 	}
 
